@@ -6,7 +6,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "start": "node dist/apps/node-vless/main.js",
+    "start": "node dist/out-tsc/apps/node-vless/src/main.js",
     "build": "nx build cf-page-vless --configuration=production && nx build node-vless --configurations=production",
     "cf-page-vless": "nx build cf-page-vless",
     "node-vless:build": "nx build cf-page-vless --configuration=production && nx build node-vless --configurations=production",
