@@ -1,7 +1,7 @@
 {
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "npx vite build apps/cf-page-vless --outDir dist/apps/cf-page-vless && npx tsc -p apps/node-vless/tsconfig.app.json"
+    "buildCommand": "bash build.sh"
   },
   "deploy": {
     "startCommand": "node dist/out-tsc/apps/node-vless/src/main.js",
