@@ -49,3 +49,4 @@ https://raw.githubusercontent.com/zizifn/edgetunnel/main/doc/deno-deploy2.gif
 然后会自动跳转到如下界面。
 
 ![index](./index.jpg)
+1
