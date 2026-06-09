@@ -1,5 +1,4 @@
-import { index401, page404 } from './util';
-import { parse, stringify, validate } from 'uuid';
+import { index401, page404, uuidValidate } from './util';
 
 async function errorHandling(context: EventContext<any, any, any>) {
   try {
@@ -21,7 +20,7 @@ async function authentication(
   // context.data It’s an arbitrary object you can attach data to that will persist during the request. The most common use-cases are for middleware that handles auth and may need to set context.data.username or similar.
   // if not set UUID, return 401 page
   const userID = context.env['UUID'] || '';
-  let isVaildUser = validate(userID);
+  let isVaildUser = uuidValidate(userID);
   if (!isVaildUser) {
     return new Response(index401, {
       status: 401,
