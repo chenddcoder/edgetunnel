@@ -49,7 +49,7 @@ const server = createServer((req, resp) => {
 
   // index page
   if (url.pathname.includes(userID)) {
-    const index = 'dist/apps/cf-page/index.html';
+    const index = 'dist/apps/cf-page-vless/index.html';
     resp.writeHead(200, {
       'Content-Type': 'text/html,charset=UTF-8',
     });

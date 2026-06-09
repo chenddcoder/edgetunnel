@@ -8,7 +8,7 @@ const mimeLookup = {
   '.html': 'text/html,charset=UTF-8',
   '.css': 'text/css; charset=UTF-8',
 };
-const staticPath = 'dist/apps/cf-page/';
+const staticPath = 'dist/apps/cf-page-vless/';
 const file401 = 'dist/apps/node-vless/assets/401.html';
 let filepath = null;
 export function serverStaticFile(req: IncomingMessage, resp: ServerResponse) {

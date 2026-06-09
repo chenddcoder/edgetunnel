@@ -53,3 +53,8 @@ Thumbs.db
 **/.dev.vars
 wrangler.toml
 .npmrc
+
+# AI tooling & temp files
+.reasonix/
+.wrangler/
+deploy-deno.sh

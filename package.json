@@ -31,7 +31,6 @@
     "tslib": "^2.5.0",
     "undici": "^5.13.0",
     "uuid": "^9.0.0",
-    "wrangler": "^2.11.1",
     "ws": "^8.13.0"
   },
   "devDependencies": {
@@ -87,6 +86,6 @@
     "vite-plugin-eslint": "1.8.1",
     "vite-tsconfig-paths": "4.2.0",
     "vitest": "0.31.1",
-    "wrangler": "^3.0.0"
+    "wrangler": "^4.98.0"
   }
 }
