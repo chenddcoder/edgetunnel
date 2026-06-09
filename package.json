@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "engines": {
-    "node": "^18"
+    "node": ">=18"
   },
   "scripts": {
     "start": "node dist/apps/node-vless/main.js",
-    "build": "nx build",
+    "build": "nx build cf-page-vless --configuration=production && nx build node-vless --configurations=production",
     "cf-page-vless": "nx build cf-page-vless",
     "node-vless:build": "nx build cf-page-vless --configuration=production && nx build node-vless --configurations=production",
     "node-vless:bunled": "nx build cf-page-vless --configuration=production && nx build node-vless --skip-nx-cache --configurations=production -- --externalDependencies=none",

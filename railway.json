@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install && npx vite build apps/cf-page-vless --outDir dist/apps/cf-page-vless && npx nx build node-vless"
+  },
+  "deploy": {
+    "startCommand": "node dist/apps/node-vless/main.js",
+    "healthcheckPath": "/health",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}

@@ -285,7 +285,7 @@ server.on('upgrade', function upgrade(request, socket, head) {
 server.listen(
   {
     port: port,
-    host: '::',
+    host: '0.0.0.0',
     // host: '0.0.0.0',
   },
   () => {
